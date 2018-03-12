@@ -10,10 +10,24 @@ interface Person {
     lastName: string;
 }
 
-function greeter(person : Person) {
+function greeter(person: Person): string {
     return "Hello, " + person.firstName + " " + person.lastName;
 }
 
-var user = new Student("Jane", "M.", "User");
+var user: Student = new Student("Jane", "M.", "User");
 
 document.body.innerHTML = greeter(user);
+
+enum Direction {
+	up,
+	down,
+	left,
+	right
+}
+
+let go: Direction;
+
+go = Direction.up;
+
+const list: number[] = [1, 2, 3];
+const objList: Array<Object> = [{}, {}];
